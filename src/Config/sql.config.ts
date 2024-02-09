@@ -28,9 +28,9 @@ let connect =async () => {
   if (pool.connected) {
     console.log('Connected');
 
-    let query = 'CREATE TABLE Users(name VARCHAR(100) NOT NULL, email VARCHAR(100)NOT NULL UNIQUE, phoneNumber VARCHAR(15) UNIQUE, role VARCHAR(50), password VARCHAR(20), profileImage VARCHAR(50), location VARCHAR(50))'
+    // let query = 'CREATE TABLE Notes(name VARCHAR(100) NOT NULL, email VARCHAR(100)NOT NULL UNIQUE, phoneNumber VARCHAR(15) UNIQUE, role VARCHAR(50), password VARCHAR(20), profileImage VARCHAR(50), location VARCHAR(50))'
 
-    let result = (await pool.connect()).query(query)
+    let result = (await pool.connect())
 
     console.log(result);
     

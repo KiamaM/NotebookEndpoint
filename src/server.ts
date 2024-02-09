@@ -1,5 +1,5 @@
 import express, { NextFunction, Request, Response, json } from 'express'
-import userRouter from './Router/user.router'
+import noteRouter from './Router/note.router'
 
 //store express in variable to use
 const app = express()
@@ -8,7 +8,9 @@ const app = express()
 app.use(json())
 
 //create base url for creating a user after enabling json
-app.use('/kraUusers', userRouter)
+app.use('/newNote', noteRouter)
+app.use('/getNotes', noteRouter)
+app.use('/getOneNote', noteRouter)
 
 //Pass all arguments needed at end point
 app.use((error:Error, req:Request, res:Response, next:NextFunction)=>{

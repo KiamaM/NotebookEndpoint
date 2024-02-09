@@ -1,14 +1,12 @@
-POST http://localhost:4200/kraUusers
+POST http://localhost:4200/newNote
 Content-Type: application/json
 
 
 {
-    "name":"Do Little",
-    "email":"abs@mail.com",
-    "phone_number":"020987874",
-    "role":"admin",
-    "password":"123244353",
-    "kraPin":"Adsfd321514326n"
+    "note_id":"Do Little",
+    "title":"Cook",
+    "content":"020987874",
+    "createdAt":"admin"
 }
 
 ####
