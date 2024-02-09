@@ -1,0 +1,14 @@
+POST http://localhost:4200/kraUusers
+Content-Type: application/json
+
+
+{
+    "name":"Do Little",
+    "email":"abs@mail.com",
+    "phone_number":"020987874",
+    "role":"admin",
+    "password":"123244353",
+    "kraPin":"Adsfd321514326n"
+}
+
+####
